@@ -33,13 +33,13 @@ public class BookCatalog {
 
     public  void addNewBook(Book b){
         if(!ownersOf.containsKey(b)){
-            ArrayList owners = null;
+            ArrayList<Persona> owners = null;
             ownersOf.put(b, owners);
         }
     }
 
-    public void addBooks(List<Book> b){
-        for (Book book : b){
+    public void addBooks(List<Book> books){
+        for (Book book : books){
             addNewBook(book);
         }
     }
